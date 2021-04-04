@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:src="@mipmap/ic_launcher_round" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WELCOME TO MINI-GAMES!"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@drawable/gradient_bg"
+                    android:layout_weight="1"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please Enter first Player Name :"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/player1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:text="Player1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please Enter first Player Name :"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/player2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:text="Player2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/playButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="PLAY"/>
+            </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
